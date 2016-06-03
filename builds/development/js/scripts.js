@@ -1,25 +1,9 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Uprock</title>
-</head>
-<body>
-<script>
-	(function(){
-		//высота экрана
+(function(){
 		var clientHeight = document.documentElement.clientHeight;
-		// делаем див и прикрепляем его
-		var div = document.createElement("div");
-		div.style.position="relative";
+		var div = document.getElementById("uprock");
 		div.style.height = div.style.width = clientHeight/10 +'px';
-		div.style.transform = div.style.WebkitTransform = div.style.MsTransform = "rotate(45deg)";
-		div.style.marginLeft = 'auto';
-		div.style.marginRight = 'auto';
 		div.style.marginTop = clientHeight/10 + 'px';
 
-		document.body.appendChild(div);
 		// рандомный цвет при создании
 		var color = Math.ceil(Math.random()*360);	
 		div.style.backgroundColor = "hsl("+color+",100%,50%)";
@@ -78,6 +62,3 @@
 		}
 
 	})();
-</script>
-</body>
-</html>

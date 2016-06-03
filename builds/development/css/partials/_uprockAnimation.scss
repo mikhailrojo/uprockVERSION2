@@ -1,0 +1,9 @@
+body{
+	div#uprock{
+		position: relative;
+		margin-left: auto;
+		margin-right: auto;
+		@include transform(45deg);
+	}
+	 
+}
